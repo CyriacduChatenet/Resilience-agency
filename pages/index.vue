@@ -19,7 +19,9 @@
     <section class="first-section">
       <h2 class="subtitle">About</h2>
       <div class="first-section-container">
-        <div class="first-section-content"></div>
+        <div class="first-section-content">
+          <p class="first-section-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, animi, minus tenetur eaque aperiam laborum blanditiis cupiditate at libero ex pariatur quisquam nostrum, ab natus velit eum voluptates. Neque nam ullam reiciendis unde corporis similique, ipsa ut sequi dolorem libero magnam incidunt officiis facilis culpa odit pariatur deleniti reprehenderit illum dicta? A, beatae. Nesciunt odit illo, necessitatibus soluta tempore delectus dignissimos, dolores, ab praesentium et odio id laboriosam inventore voluptas aliquid error unde voluptates accusantium qui. Eligendi vel pariatur laboriosam autem laborum esse, cum tempore! Delectus, illum! Laborum porro quia ad sequi quam nobis, nulla impedit consequatur sapiente inventore iure similique, provident officia quisquam vero est velit molestiae consectetur dolor necessitatibus sunt quos eius. Voluptate voluptatem debitis modi. Iusto atque sequi fuga sunt id nihil dicta culpa minima obcaecati aut rerum nam repudiandae, iste enim architecto recusandae. Aperiam, vitae sunt qui ullam libero architecto eaque sequi iste at praesentium totam voluptatem illum aspernatur itaque quidem. Tempora vero similique laborum commodi, accusantium quod dolorum, quae earum nostrum harum sapiente. Impedit eligendi tempora odio quibusdam dolorum repellendus facilis rem incidunt eveniet dicta molestiae quidem, voluptates sint doloribus natus quam odit eaque temporibus, harum beatae eum reiciendis officia autem quia? Magnam, ab unde.</p>
+        </div>
         <div class="first-section-images"></div>
       </div>
     </section>
@@ -87,12 +89,11 @@ export default Vue.extend({
 }
 .first-section{
   width: 100vw;
-  height: 100vh;
   background-color: rgb(17, 17, 17);
+  height: 100vh;
 }
 .first-section-container{
   width: 90%;
-  height: 70%;
   padding: 0 5%;
 }
 @media all and (max-width:767.98px){
@@ -184,6 +185,7 @@ export default Vue.extend({
     .first-section-container{
       display: flex;
       flex-direction: column-reverse;
+      height: 120%;
       .first-section-content{
         width: 100%;
         height: 100%;
@@ -217,12 +219,16 @@ export default Vue.extend({
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     .first-section-container{
       display: flex;
       .first-section-content{
-        width: 50%;
+        width: 40%;
         height: 100%;
-        background-color: red;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
       }
       .first-section-images{
         width: 50%;
@@ -235,6 +241,10 @@ export default Vue.extend({
       color: white;
       font-size: 6vh;
       margin-bottom: 4vh;
+    }
+    .first-section-desc{
+      color: white;
+      line-height: 2.75vh;
     }
   }
 }
