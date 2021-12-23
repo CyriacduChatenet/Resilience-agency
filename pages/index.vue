@@ -25,6 +25,13 @@
         <div class="first-section-images"></div>
       </div>
     </section>
+    <section class="second-section">
+      <h2 class="subtitle">Stats</h2>
+      <div class="second-section-container">
+        <div class="second-section-content"></div>
+        <div class="second-section-images"></div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -92,7 +99,16 @@ export default Vue.extend({
   background-color: rgb(17, 17, 17);
   height: 100vh;
 }
+.second-section{
+  width: 100vw;
+  background-color: rgb(17, 17, 17);
+  height: 100vh;
+}
 .first-section-container{
+  width: 90%;
+  padding: 0 5%;
+}
+.second-section-container{
   width: 90%;
   padding: 0 5%;
 }
@@ -233,7 +249,9 @@ export default Vue.extend({
       .first-section-images{
         width: 50%;
         height: 100%;
-        background-color: green;
+        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-position: center;
+        background-size: cover;
       }
     }
     .subtitle{
@@ -243,6 +261,41 @@ export default Vue.extend({
       margin-bottom: 4vh;
     }
     .first-section-desc{
+      color: white;
+      line-height: 2.75vh;
+    }
+  }
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .second-section-container{
+      display: flex;
+      .second-section-content{
+        width: 40%;
+        height: 100%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      .second-section-images{
+        width: 50%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .subtitle{
+      font-family: $font-secondary;
+      color: white;
+      font-size: 6vh;
+      margin-bottom: 4vh;
+    }
+    .second-section-desc{
       color: white;
       line-height: 2.75vh;
     }
