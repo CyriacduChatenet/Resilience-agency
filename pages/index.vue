@@ -28,8 +28,8 @@
     <section class="second-section">
       <h2 class="subtitle">Stats</h2>
       <div class="second-section-container">
-        <div class="second-section-content"></div>
-        <div class="second-section-images"></div>
+        <div class="second-section-img"></div>
+        <div class="second-section-graph"></div>
       </div>
     </section>
   </main>
@@ -105,10 +105,6 @@ export default Vue.extend({
   height: 100vh;
 }
 .first-section-container{
-  width: 90%;
-  padding: 0 5%;
-}
-.second-section-container{
   width: 90%;
   padding: 0 5%;
 }
@@ -273,22 +269,24 @@ export default Vue.extend({
     height: 100vh;
     .second-section-container{
       display: flex;
-      .second-section-content{
-        width: 40%;
+      width: 100vw;
+      height: 90vh;
+    }
+    .second-section-graph{
+        width: 50%;
         height: 100%;
         padding: 0 5%;
         display: flex;
         align-items: center;
         text-align: center;
       }
-      .second-section-images{
+      .second-section-img{
         width: 50%;
         height: 100%;
-        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
         background-position: center;
         background-size: cover;
       }
-    }
     .subtitle{
       font-family: $font-secondary;
       color: white;
