@@ -1,5 +1,15 @@
 # agency-resilience
 
+## Stack 
+<div>
+  <img src="https://miro.medium.com/max/1112/1*Qh_De3xsiql3dvvcbGD9nw.png" height="80" alt="NuxtJS"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" height="60" alt="VueJS"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg" height="60" alt="TS"/>
+  <img src="https://greensock.com/uploads/monthly_2020_03/tweenmax.png.cf27916e926fbb328ff214f66b4c8429.png" height="60" alt="GSAP"/>
+  <img src="https://www.chartjs.org/media/logo-title.svg" height="60" alt="Chart.JS"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" height="60" alt="Sass"/>
+</div>
+
 ## Build Setup
 
 ```bash

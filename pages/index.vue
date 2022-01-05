@@ -29,7 +29,9 @@
       <h2 class="subtitle">Stats</h2>
       <div class="second-section-container">
         <div class="second-section-img"></div>
-        <div class="second-section-graph"></div>
+        <div class="second-section-graph">
+          <tree-chart style="width:100%; height:100%"/>
+        </div>
       </div>
     </section>
   </main>
@@ -38,8 +40,10 @@
 <script lang="ts">
 import Vue from 'vue'
 import {gsap} from "gsap"
+import TreeChart from '~/components/TreeChart.vue'
 
 export default Vue.extend({
+  components: { TreeChart },
   name: 'IndexPage',
   mounted(){
     gsap.to("#letter1", {delay: 1, duration : 2, opacity : 1})
@@ -100,6 +104,11 @@ export default Vue.extend({
   height: 100vh;
 }
 .second-section{
+  width: 100vw;
+  background-color: rgb(17, 17, 17);
+  height: 100vh;
+}
+.third-section{
   width: 100vw;
   background-color: rgb(17, 17, 17);
   height: 100vh;
@@ -278,6 +287,7 @@ export default Vue.extend({
         padding: 0 5%;
         display: flex;
         align-items: center;
+        justify-content: center;
         text-align: center;
       }
       .second-section-img{
@@ -294,6 +304,43 @@ export default Vue.extend({
       margin-bottom: 4vh;
     }
     .second-section-desc{
+      color: white;
+      line-height: 2.75vh;
+    }
+  }
+  .third-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .third-section-container{
+      display: flex;
+      width: 100vw;
+      height: 90vh;
+    }
+    .third-section-graph{
+        width: 50%;
+        height: 100%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      .third-section-img{
+        width: 50%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
+        background-position: center;
+        background-size: cover;
+      }
+    .subtitle{
+      font-family: $font-secondary;
+      color: white;
+      font-size: 6vh;
+      margin-bottom: 4vh;
+    }
+    .third-section-desc{
       color: white;
       line-height: 2.75vh;
     }
