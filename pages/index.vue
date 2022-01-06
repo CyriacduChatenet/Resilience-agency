@@ -131,18 +131,27 @@ export default Vue.extend({
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 145vh;
+    width: 90vw;
+    padding: 0 5vw;
     .first-section-container{
       display: flex;
       flex-direction: column-reverse;
+      width: 100%;
+      height: 130vh;
       .first-section-content{
         width: 100%;
         height: 100%;
-        background-color: red;
+        color: white;
+        text-align: center;
       }
       .first-section-images{
         width: 100%;
-        height: 100%;
-        background-color: green;
+        height: 50vh;
+        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 5vh;
       }
     }
     .subtitle{
@@ -150,6 +159,45 @@ export default Vue.extend({
       color: white;
       font-size: 4vh;
       margin-bottom: 4vh;
+    }
+  }
+    .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .second-section-container{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 90vh;
+    }
+    .second-section-graph{
+        width: 95%;
+        height: 100%;
+        padding: 0 2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .second-section-img{
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
+        background-position: center;
+        background-size: cover;
+      }
+    .subtitle{
+      font-family: $font-secondary;
+      color: white;
+      font-size: 4vh;
+      margin-bottom: 4vh;
+    }
+    .second-section-desc{
+      color: white;
+      line-height: 2.75vh;
     }
   }
 }
@@ -167,25 +215,73 @@ export default Vue.extend({
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 90vh;
+    width: 90vw;
+    padding: 0 5vw;
     .first-section-container{
       display: flex;
       flex-direction: column-reverse;
+      width: 100%;
+      height: 60vh;
       .first-section-content{
         width: 100%;
         height: 100%;
-        background-color: red;
+        color: white;
+        text-align: center;
       }
       .first-section-images{
         width: 100%;
-        height: 100%;
-        background-color: green;
+        height: 50vh;
+        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 5vh;
       }
     }
     .subtitle{
       font-family: $font-secondary;
       color: white;
-      font-size: 6vh;
+      font-size: 4vh;
       margin-bottom: 4vh;
+    }
+  }
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .second-section-container{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 90vh;
+    }
+    .second-section-graph{
+        width: 95%;
+        height: 100%;
+        padding: 0 2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .second-section-img{
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
+        background-position: center;
+        background-size: cover;
+      }
+    .subtitle{
+      font-family: $font-secondary;
+      color: white;
+      font-size: 4vh;
+      margin-bottom: 4vh;
+    }
+    .second-section-desc{
+      color: white;
+      line-height: 2.75vh;
     }
   }
 }
@@ -198,31 +294,78 @@ export default Vue.extend({
     font-size: 3vh;
     transform: translateY(6vh);
   }
-  .first-section{
+ .first-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 70vh;
+    width: 90vw;
+    padding: 0 5vw;
     .first-section-container{
       display: flex;
       flex-direction: column-reverse;
-      height: 120%;
+      width: 100%;
+      height: 40vh;
       .first-section-content{
         width: 100%;
         height: 100%;
-        background-color: red;
+        color: white;
+        text-align: center;
       }
       .first-section-images{
         width: 100%;
-        height: 100%;
-        background-color: green;
+        height: 50vh;
+        background-image: url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 5vh;
       }
     }
     .subtitle{
       font-family: $font-secondary;
       color: white;
-      font-size: 6vh;
+      font-size: 4vh;
       margin-bottom: 4vh;
+    }
+  }
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .second-section-container{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 90vh;
+    }
+    .second-section-graph{
+        width: 95%;
+        height: 100%;
+        padding: 0 2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .second-section-img{
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
+        background-position: center;
+        background-size: cover;
+      }
+    .subtitle{
+      font-family: $font-secondary;
+      color: white;
+      font-size: 4vh;
+      margin-bottom: 4vh;
+    }
+    .second-section-desc{
+      color: white;
+      line-height: 2.75vh;
     }
   }
 }
@@ -304,43 +447,6 @@ export default Vue.extend({
       margin-bottom: 4vh;
     }
     .second-section-desc{
-      color: white;
-      line-height: 2.75vh;
-    }
-  }
-  .third-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    .third-section-container{
-      display: flex;
-      width: 100vw;
-      height: 90vh;
-    }
-    .third-section-graph{
-        width: 50%;
-        height: 100%;
-        padding: 0 5%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-      }
-      .third-section-img{
-        width: 50%;
-        height: 100%;
-        background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80');
-        background-position: center;
-        background-size: cover;
-      }
-    .subtitle{
-      font-family: $font-secondary;
-      color: white;
-      font-size: 6vh;
-      margin-bottom: 4vh;
-    }
-    .third-section-desc{
       color: white;
       line-height: 2.75vh;
     }
